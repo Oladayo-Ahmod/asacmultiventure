@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 25px 0;
-  top: 40px;
+  top: 20px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -203,7 +203,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 28px;
   }
 }
-
+.transitions{
+  transition : 1s ease;
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -448,6 +450,57 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+/* ..............swiper js styles */
+.swiper-container{
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  top:105px;
+margin-bottom:5px;
+margin-left: auto;
+margin-right: auto;
+}
+@media screen and (max-width:759px){
+  .swiper-container{
+    width: 100%;
+    height: 35vh;
+    position: relative;
+    top:50px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+.swiper-container .swiper-wrapper{
+  height: 100%;
+  width:100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide{
+  text-align: center;
+  height: 100%;
+  font-size: 18px;
+ 
+/*....... center slide vertically.....
+display: -webkit-box !important;
+display: -ms-flexbox !important;
+display: -webkit-flex !important;
+display: flex;
+-webkit-box-pack:center !important;
+-webkit-justify-content:center !important;
+justify-content: center !important;
+-webkit-box-align:center !important;
+-ms-flex-align:center !important;
+-ms-align-items: center !important;
+-webkit-align-items: center !important;
+align-items: center !important;*/
+}
+.swiper-container .swiper-slide .swiper-slide img{
+  height: auto;
+  width: 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/

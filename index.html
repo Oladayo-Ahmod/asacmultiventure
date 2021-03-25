@@ -23,6 +23,7 @@
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper-js/swiper.min.css" rel="stylesheet">
   <!--  Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -33,9 +34,9 @@
   <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
     <div class="container d-flex">
       <div class="contact-info mr-auto">
-        <i class="icofont-envelope"></i> <a href="mailto:alameenstore1@gmail.com">aboosoowaybahandco@gmail.com</a>
-        <i class="icofont-phone"></i> +234 8055882270
-        <i class="icofont-phone"></i> +234 8104677298
+        <i class="icofont-envelope"></i> <a href="mailto:aboosoowaybahandco@gmail.com">aboosoowaybahandco@gmail.com</a>
+        <i class="icofont-phone"></i> +234 7035555752
+        <i class="icofont-phone"></i> +234 7062394500
       </div>
       <div class="social-links">
         <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
@@ -61,8 +62,8 @@
           <li> 
             <ul class="nav nav-tabs">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-                    <div class="dropdown-menu p-1 shadow">
+                    <a class="nav-link dropdown-toggle transition" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+                    <div class="dropdown-menu transitions p-1 shadow">
                         <a class="dropdown-item" href="#">Investment</a>
                         <a class="dropdown-item" href="#">Agriculture</a>
                         <a class="dropdown-item" href="#">Transportation</a>
@@ -77,6 +78,66 @@
 
     </div>
   </header><!-- End Header -->
+
+  <!-- ===== swiper js section ===== -->
+   <!-- Swiper -->
+   <div class="swiper-container mt-2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card text-white">
+          <img class="card-img-top" src="assets/img/products/cereal1.jpeg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Text</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card text-white">
+          <img class="card-img-top" src="assets/img/products/cereal4.jpeg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Text</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card text-white">
+          <img class="card-img-top" src="assets/img/products/cereal3.jpeg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Text</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card text-white">
+          <img class="card-img-top" src="assets/img/products/cereal1.jpeg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Text</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+        <div class="card text-white">
+          <img class="card-img-top" src="assets/img/products/cereal4.jpeg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Text</p>
+          </div>
+        </div>
+    </div>
+      
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+    <!-- ===== swiper js section ends ===== -->
 
   <!-- ======= welcome Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -103,9 +164,11 @@
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/typed-js/typed.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper-js/swiper.min.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script>
+    
     // typed js init
   var typed = new Typed('#typed', {
     strings:['Best investment company to partner with','Your number one company for foreign exchange services','Best in agriculture','Unprecended transport services'],
@@ -119,6 +182,23 @@
       var modal = $(this);
       // Use above variables to manipulate the DOM
       
+    });
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      effect: 'fade',
+      autoplay: {
+            display:1500,
+            disableOnInteraction: false,
+          },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
     });
   </script>
 

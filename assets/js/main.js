@@ -1,9 +1,4 @@
-/**
-* Template Name: BizLand - v1.1.0
-* Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 !(function($) {
   "use strict";
 
@@ -207,9 +202,6 @@
     loop: true,
     items: 1
   });
-
-  
-
 
   // Init AOS
   function aos_init() {
