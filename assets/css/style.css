@@ -175,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width:759px){
   #header .logo a span{
-    font-size:24px;
+    font-size:22px;
   }
 }
 #header .logo a {
@@ -511,8 +511,8 @@ align-items: center !important;*/
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 75vh;
-  background: url("../img/products/images.jpeg") top left;
+  height: 50vh;
+  /* background: url("../img/products/images.jpeg") top left; */
   background-size: cover;
   position: relative;
 }
@@ -633,6 +633,14 @@ align-items: center !important;*/
   #hero {
     height: 120vh;
   }
+}
+/* short about section */
+.about-desc{
+  font-size:14px !important;
+  line-height:23px;
+}
+.about-us-img{
+  max-width:450px;
 }
 
 /*--------------------------------------------------------------
