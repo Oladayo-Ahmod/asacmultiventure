@@ -608,6 +608,7 @@ align-items: center !important;*/
 @media (max-width: 768px) {
   #hero {
     height: 55vh;
+    margin-top:-20px;
   }
   #hero h1 {
     font-size: 28px;
