@@ -173,11 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.8px;
   font-family: "Poppins", sans-serif;
 }
-@media screen and (max-width:759px){
-  #header .logo a span{
-    font-size:22px;
-  }
-}
+
 #header .logo a {
   color: #222222;
 }
@@ -187,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width:759px){
   #header .logo a span{
-    font-size:24px;
+    font-size:18px;
   }
 }
 #header .logo img {
@@ -450,6 +446,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+/*  services slide */
+.service-slide {
+  position: relative;
+  top:120px;
+}
+.service-slide img{
+  height: 350px;
+}
+
 /* ..............swiper js styles */
 .swiper-container{
   width: 100%;
@@ -460,33 +465,19 @@ margin-bottom:5px;
 margin-left: auto;
 margin-right: auto;
 }
-@media screen and (max-width:759px){
-  .swiper-container{
-    width: 100%;
-    height: 35vh;
-    position: relative;
-    top:50px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-.swiper-container .swiper-wrapper .swiper-slide{
-  height:300px !important;
-}
-  
-}
-.swiper-container .swiper-wrapper{
+/* .swiper-container .swiper-wrapper{
   height: 100%;
   width:100%;
-}
+} */
 .swiper-container .swiper-wrapper .swiper-slide{
   text-align: center;
+  width:100%;
   height: 100%;
   background-size: cover;
   background-repeat: no repeat;;
   font-size: 18px;
  
-/*....... center slide vertically.....
+/* ....... center slide vertically..... */
 display: -webkit-box !important;
 display: -ms-flexbox !important;
 display: -webkit-flex !important;
@@ -498,13 +489,35 @@ justify-content: center !important;
 -ms-flex-align:center !important;
 -ms-align-items: center !important;
 -webkit-align-items: center !important;
-align-items: center !important;*/
+align-items: center !important;
 }
 .swiper-container .swiper-slide .swiper-slide img{
   height: auto;
-  width: 80%;
+  width: 100% !important;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width:759px){
+  .service-slide{
+    width: 100%;
+    height: 35vh;
+    position: relative;
+    top:60px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .service-slide img{
+    height: 35vh;
+    width:100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+.swiper-container .swiper-wrapper .swiper-slide{
+  height:300px !important;
+}
+  
 }
 /*--------------------------------------------------------------
 # Hero Section
