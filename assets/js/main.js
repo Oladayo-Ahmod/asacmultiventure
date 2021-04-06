@@ -213,4 +213,11 @@
   $(window).on('load', function() {
     aos_init();
   });
+  
 })(jQuery);
+// preloading image ads cancel icon
+function cancel_icon(){
+  let parent = document.querySelector('.preloading-image');
+  parent.style.display = 'none';
+  // alert('kk')
+}

@@ -16,6 +16,57 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
 }
+/* preloading pictures ads */
+.preloading-image {
+  position: fixed;
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  top: 40px;
+  padding-top:100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #c5ced0;
+  /* background:rgb(43, 36, 36); */
+  /* filter: blur(1px); */
+}
+.preloading-image > .image-container{
+  height:403px !important;
+  width:403px !important;
+  /* filter: none !important; */
+  border-radius:10px;
+}
+.cancel-icon{
+  margin:10px;
+  height: 40px;
+  width: 40px;
+  /* background-color:red; */
+  border-radius:10px;
+}
+.cancel-icon i{
+ font-size:24px;
+}
+.preloading-image > .image-container > img{
+  height:400px;
+  filter :none !important;
+  width:400px;
+
+}
+@media screen and (max-width:759px){
+  .preloading-image > .image-container{
+    width:100% !important;
+    height:300px !important;
+  }
+  .preloading-image > .image-container > img{
+    width:100% !important;
+    height:99% !important;
+  }
+}
+/* preloading pictures ads */
 
 /*--------------------------------------------------------------
 # Preloader
@@ -66,7 +117,13 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
-.back-to-top {
+.whatsapp{
+  position: fixed;
+  right: 15px;
+  bottom: 70px;
+  z-index: 99999;
+}
+.back-to-top{
   position: fixed;
   display: none;
   right: 15px;
@@ -74,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99999;
 }
 
-.back-to-top i {
+.back-to-top i, .whatsapp img {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -785,6 +842,13 @@ section {
 }
 .product-hover > img:hover{
   transform:scale(1.2);
+}
+.featured-services{
+  background : url('../img/products/invest3.jpeg');
+  background-size: cover;
+  width:100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 .featured-services .icon-box {
   padding: 30px;
