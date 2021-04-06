@@ -172,7 +172,7 @@
     <div class="row">
 
         <div class="col-md-3 my-4">
-            <a href="https://api.whatsapp.com/send?phone=2347035555772&text=i want to ...">
+            <a href="https://api.whatsapp.com/send?phone=2347035555772&text=i will like to ...">
                 <div class="card shadow" style="background-color: rgba(113,127,142,0.25); border-color:rgb(230, 230, 248);">
                   <div class="product-hover">
                     <img class="card-img-top" height="250px" src="assets/img/products/investment.jpg" alt="investment">
@@ -185,7 +185,7 @@
         </div>
 
         <div class="col-md-3 my-4">
-            <a href="https://api.whatsapp.com/send?phone=2347035555772&text=i want to place ..">
+            <a href="https://api.whatsapp.com/send?phone=2347035555772&text=i will like to  ..">
                 <div class="card shadow" style="background-color: rgba(113,127,142,0.25); border-color:rgb(230, 230, 248);">
                   <div class="product-hover">
                     <img class="card-img-top" height="250px" src="assets/img/products/agriculture.jpg" alt="agriculture ">
@@ -198,7 +198,7 @@
         </div>
 
         <div class="col-md-3 my-4">
-            <a href="https://api.whatsapp.com/send?phone=2347035555772&text=i want to place order on cereal and noodles product">
+            <a href="https://api.whatsapp.com/send?phone=2347035555772&text=i will like to ">
                 <div class="card shadow" style="background-color: rgba(113,127,142,0.25); border-color:rgb(230, 230, 248);">
                   <div class="product-hover">
                     <img class="card-img-top" height="250px" src="assets/img/products/investment.jpg" alt="foreign exchange">
@@ -211,7 +211,7 @@
         </div>
 
         <div class="col-md-3 my-4">
-            <a href="https://api.whatsapp.com/send?phone=2347035555772&text=i want to place order on semovita and wheat">
+            <a href="https://api.whatsapp.com/send?phone=2347035555772&text=i will like to ">
                 <div class="card shadow" style="background-color: rgba(113,127,142,0.25); border-color:rgb(230, 230, 248);">
                   <div class="product-hover">
                     <img class="card-img-top" height="250px" src="assets/img/products/transportation.jpg" alt="transportation">
@@ -224,9 +224,17 @@
         </div>
 
             <div class="container text-center">
-              <a href="assets/img/products/investment-form.pdf" type="button" download class="btn my-2 btn-primary ">
-                Download Investment Form
-              </a><br>
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="assets/img/products/investment-form.pdf" type="button" download class="btn my-2 btn-primary ">
+                    Download Investment Form
+                  </a><br>
+                </div>
+                <div class="col-md-6">
+                  <a href="#" type="button" class="btn my-2 btn-primary" data-toggle="modal" data-target="#booking">
+                    Online Transport Booking
+                  </a><br>
+                </div>  
             </div>
     </div>
 </div>
@@ -420,6 +428,53 @@ seeing possibility instead of limitation.
 </footer>
   <!-- footer ends -->
 
+  <!-- online transport bookings modal-->
+  <div class="modal fade" id="booking" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Online Booking</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <form action="form.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="fullname">Full name</label>
+              <input type="text" name="fullname" id="" class="form-control" placeholder="" aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="" class="form-control" placeholder="" aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="number" name="number" id="" class="form-control" placeholder="" aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+              <label for="location">My location</label>
+              <input type="text" name="location" id="" class="form-control" placeholder="" aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+              <label for="destination">Destination</label>
+              <input type="text" name="destination" id="" class="form-control" placeholder="" aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+              <label for="date">Booking date</label>
+              <input type="date" name="date" id="" class="form-control" placeholder="" aria-describedby="helpId">
+            </div><br>
+          <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- online transport bookings modal ends-->
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
