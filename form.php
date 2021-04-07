@@ -81,10 +81,10 @@ try {
     $mail->send();
     #echo 'Message has been sent';
 } catch (Exception $e) {
-    #echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     header("location:index.html");
 }
-// if this doesnt work after connecting it to the internet , i am gonna check the credenecials firstly then i am gonna check the send function limiting it to just one to avoid a fatal error being thrown at me by php mailer #noted: scroll spy in jquery// SEO/DIGITAL MARKWTING CONTENT
+// if this doesn't work after connecting it to the internet , i am gonna check the credenecials firstly then i am gonna check the send function limiting it to just one to avoid a fatal error being thrown at me by php mailer #noted: scroll spy in jquery// SEO/DIGITAL MARKWTING CONTENT
 if ($mail->send()) {
     $autorespond = new PHPMailer();
     $autorespond->isSMTP();
