@@ -59,7 +59,7 @@ try {
         <div style="background-color: white; border-radius: 10px;padding-left: 15px;padding-right: 15px;margin: 0 auto; width:90%;">
     <h2 style="text-align: center; padding-top:20px;"><span style="color: red;">ASAC </span><span style="color: dodgerblue;">multiventure</span></h2>
     <h3 style="text-align: center; color:grey;">Message received from client about transport booking, kindly get back to them sooner.</h3><br>
-    <h3>Below are your booking details submitted to :</h3>'.
+    <h3>Below are booking details submitted :</h3>'.
     '<p> Client Name : ' .$name. '</p>'.
     '<p> Client Number : ' .$number. '</p>'.
     '<p> Client Destination : ' .$destination. '</p>'.
@@ -109,13 +109,13 @@ if ($mail->send()) {
         <div style="background-color: white; border-radius: 10px;padding-left: 15px;padding-right: 15px;margin: 0 auto; width:90%;">
     <h2 style="text-align: center; padding-top:20px;"><span style="color: red;">ASAC </span><span style="color: dodgerblue;">multiventure</span></h2>
     <h3 style="text-align: center; color:grey;">We have received your message about your booking, we shall get back to you sooner.</h3><br>
-    <h3>Below are your project details submitted to us :</h3>
-    <p><?php echo "Name : " .$name; ?></p>
-    <p><?php echo "Number : " .$number; ?></p>
-    <p><?php echo "Destination : " .$destination; ?></p>
-    <p><?php echo "Booked Date : " .$date; ?></p>
-    <p><?php echo "Your location : " .$location; ?></p><br>
-</div><br>
+    <h3>Below are your project details submitted to us :</h3>'.
+    '<p> Your Name : ' .$name. '</p>'.
+    '<p> Your Number : ' .$number. '</p>'.
+    '<p> Your Chosen Destination : ' .$destination. '</p>'.
+    '<p> Booked Date : ' .$date. '</p>'.
+    '<p> Your Current Location : ' .$location. '</p> <br>'.
+'</div><br>
  <div style="height: 30px; width: 92%; background-color:#f8f8f8; text-align: center; color: grey;border-radius: 15px;margin: 0 3% 0 4%;">
             <p style="font-style: italic; position: relative;top: 5px;">Thanks for contacting us. We are glad to work with you!</p>
 
