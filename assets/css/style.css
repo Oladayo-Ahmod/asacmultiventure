@@ -510,7 +510,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .service-slide img{
   height: 350px;
+  width:80% !important;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 
 /* ..............swiper js styles */
 .swiper-container{
