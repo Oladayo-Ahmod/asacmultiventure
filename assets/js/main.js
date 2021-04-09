@@ -221,3 +221,9 @@ function cancel_icon(){
   parent.style.display = 'none';
   // alert('kk')
 }
+// remove 000webhost banner
+
+window.onload = () => {
+  let bannerNode = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
+  bannerNode.parentNode.removeChild(bannerNode);
+}
